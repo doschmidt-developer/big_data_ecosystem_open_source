@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    nifi:
+        container_name: big_data_ecosystem_data_ingestion_nifi
+        image: apache/nifi:1.13.2
+        user: root
+        network_mode: bridge
+        ports:
+            - 8080:8080 
+            
